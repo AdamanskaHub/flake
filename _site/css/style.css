@@ -9,6 +9,10 @@ body{
   --actioncolor:#3379B9;
 }
 
+strong{
+  color: #023d4f;
+}
+
 .hero{
   min-height: 100vh;
   background: linear-gradient(269.09deg, #F8B85B 6.99%, #FFEAA2 58.43%);
@@ -69,6 +73,7 @@ body{
   
 }
 .pics{
+  margin-top: 40px;
   position: relative;
 }
 .pics:hover .glasses{
@@ -134,7 +139,7 @@ body{
   max-width: 1200px;
   margin: 120px 0;
   padding: 40px;
-  min-height: 100vh;
+  min-height: calc(50vh - 40px);
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -173,6 +178,7 @@ p{
 .skills{
   display: flex;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .skill{
@@ -185,6 +191,7 @@ p{
   padding: 4px 10px;
   border: 2px var(--actioncolor) solid;
   border-radius: 50px;
+  margin-bottom: 10px;
 }
 .skill:not(:last-child){
   margin-right: 20px;
@@ -204,7 +211,7 @@ p{
   padding: 40px;
   justify-content: space-between;
   margin: 0 0 80px;
-  min-height: 100vh;
+  min-height: 80vh;
   align-items: center;
 }
 
@@ -220,7 +227,8 @@ p{
 .project-pic{
   width: 100%;
   object-fit: cover;
-  max-height: 340px;
+  height: 340px;
+  margin-bottom: 10px;
 }
 
 @media  (max-width: 1000px){
@@ -247,7 +255,7 @@ p{
   font-family: var(--para);
   font-weight: bold;
   font-size: 22px;
-  margin-top: 10px;
+  margin-top: 20px;
   text-transform: uppercase;
 }
 .project-link::after {
